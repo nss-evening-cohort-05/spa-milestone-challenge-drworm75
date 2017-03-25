@@ -1,0 +1,52 @@
+{
+    "cars": [
+        {
+            "make": "Chrystler",
+            "model": "Truckamvan",
+            "year": "1995",
+            "price": "1199",
+            "photo": "./images/truckamavan.jpg",
+            "description": "The hauling capacity of a truck. The style of a minivan"
+        },
+        {
+            "make": "Ford",
+            "model": "Fish-150",
+            "year": "2005",
+            "price": "2999",
+            "photo": "./images/fish-150.jpg",
+            "description": "Holy mackrel!  You'll want to own this fly truck just for the hailbut."
+        },
+        {
+            "make": "Nissan",
+            "model": "Rogue",
+            "year": "2004",
+            "price": "8999",
+            "photo": "./images/truckamavan.jpg",
+            "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+        },
+        {
+            "make": "Nissan",
+            "model": "Rogue",
+            "year": "2000",
+            "price": "8999",
+            "photo": "./images/truckamavan.jpg",    
+            "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+        },
+        {
+            "make": "Nissan",
+            "model": "Rogue",
+            "year": "2033",
+            "price": "8999",
+            "photo": "./images/truckamavan.jpg",
+            "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+        },
+        {
+            "make": "Nissan",
+            "model": "Rogue",
+            "year": "25650",
+            "price": "8999",
+            "photo": "./images/truckamavan.jpg",
+            "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+        }
+    ]
+}
