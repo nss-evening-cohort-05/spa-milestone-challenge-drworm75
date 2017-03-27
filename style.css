@@ -1,64 +1,52 @@
+/******************************
+Project Colors
+******************************/
 /*#A55837 coconut
 #4B342B acajou
 #151414 licorice 
 #96562A coconut (light)
 #655344 umber*/
 
+
+/******************************
+General
+******************************/
+
 body {
     background-color: #655344;
-}
-.car-card {
-
-	background-color: #96562A;
-	margin-bottom: 5px;
-	word-wrap: normal;
-    border: 1px solid black;
-    position: relative;
-    z-index: 2;
-    color: white;
-}
-
-.selected {
-    border: 5px solid black;
-    background-color: #4B342B;
 }
 
 #large-input {
     width: 300px;
-    height: 145px;
+    height: 192px;
     font-size: 16px;
     word-wrap: normal;
+}
 
+/*#nav {
+    padding-top: 30px;
+}*/
+
+
+/******************************
+Card Styling
+******************************/
+#card-container {
+    margin-top: 20px;
+}
+
+.car-card {
+    background-color: #96562A;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    color: white;
 }
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
     border: none;
 }
 
-
-
-header {
-    width: 100%;
-    color:red;
-    height: 150px;
-
-    .navbar-inner {
-        border:0;
-        border-radius: 0;
-        background: blue;
-        padding:0;
-        margin:0;
-        height: inherit;
-    }
+.selected {
+    border: 5px solid black;
 }
 
-#card-container {
-	margin-top: 20px;
-}
-
-.col-md-*{
-    padding: 20px;
-}

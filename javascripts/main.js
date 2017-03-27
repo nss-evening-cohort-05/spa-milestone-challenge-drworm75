@@ -1,10 +1,11 @@
-
 var cardContainer = document.getElementById("card-container");
 
-console.log("The main event");
+// build cards with car info
 function populatePage (inventory) {		
+		// create cardBuilder
 		var cardBuilder = "";
 		cardBuilder += `<div class="row">`
+	// Loop over the inventory and populate the page	
 	for (var i = 0; i < inventory.length; i++) {
 		cardBuilder += `<div class="col-md-4">`
 		cardBuilder += `<div class="car-card" id=${i}>`
@@ -24,19 +25,16 @@ function populatePage (inventory) {
 		cardBuilder += `</tr>`
 		cardBuilder += `</table>`
 		cardBuilder += `</div></div></div>`
+		//execute this code after every third loop of the inventory array to make 3 cards per row
 		if (((i + 1) % 3) === 0) {
 			cardBuilder += `</div>`
+			//write cards to DOM
 			cardContainer.innerHTML += cardBuilder;
+			//clear cardBuilder and get ready to make next row of cards
 			cardBuilder = "";
-			cardBuilder += `<div class="row">`
-			
+			cardBuilder += `<div class="row">`			
 		}
-
 	}
-
-		
-
-  // Loop over the inventory and populate the page
   
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.activateEvents();
