@@ -1,3 +1,4 @@
+
 var cardContainer = document.getElementById("card-container");
 
 console.log("The main event");
@@ -6,7 +7,7 @@ function populatePage (inventory) {
 		cardBuilder += `<div class="row">`
 	for (var i = 0; i < inventory.length; i++) {
 		cardBuilder += `<div class="col-md-4">`
-		cardBuilder += `<div class="car-card">`
+		cardBuilder += `<div class="car-card" id=${i}>`
 		cardBuilder += `<div class="table-responsive">`
 		cardBuilder += `<table class="table">`
 		cardBuilder += `<tr>`
@@ -19,7 +20,7 @@ function populatePage (inventory) {
 		cardBuilder += `<td><img src ="${inventory[i].photo}" class="img-responsive"></td>`
 		cardBuilder += `</tr>`
 		cardBuilder += `<tr>`
-		cardBuilder += `<td><h3>Description: ${inventory[i].description}</h3></td>`
+		cardBuilder += `<td><h3>${inventory[i].description}</h3></td>`
 		cardBuilder += `</tr>`
 		cardBuilder += `</table>`
 		cardBuilder += `</div></div></div>`
@@ -38,7 +39,7 @@ function populatePage (inventory) {
   // Loop over the inventory and populate the page
   
   // Now that the DOM is loaded, establish all the event listeners needed
-  // CarLot.activateEvents();
+  CarLot.activateEvents();
 }
 
 // Load the inventory and send a callback function to be

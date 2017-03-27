@@ -12,7 +12,11 @@ var CarLot = (function () {
 		});	
 		inventoryLoader.open("GET", "inventory.JSON");
 		inventoryLoader.send();
-}
+	},
+
+	getInventory: function() {
+		return inventory;
+	}
   };
 
 })();

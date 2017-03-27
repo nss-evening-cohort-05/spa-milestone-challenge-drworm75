@@ -1,23 +1,47 @@
-body {
-	width: 100%;
-}
+/*#A55837 coconut
+#4B342B acajou
+#151414 licorice 
+#96562A coconut (light)
+#655344 umber*/
 
+body {
+    background-color: #655344;
+}
 .car-card {
-	background-color: lightgreen;
+
+	background-color: #96562A;
 	margin-bottom: 5px;
 	word-wrap: normal;
+    border: 1px solid black;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.selected {
+    border: 5px solid black;
+    background-color: #4B342B;
 }
 
 #large-input {
     width: 300px;
     height: 145px;
     font-size: 16px;
+    word-wrap: normal;
 
 }
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: none;
+}
+
+
+
 header {
     width: 100%;
-    line-height: 150px;
     color:red;
     height: 150px;
 
@@ -33,4 +57,8 @@ header {
 
 #card-container {
 	margin-top: 20px;
+}
+
+.col-md-*{
+    padding: 20px;
 }
