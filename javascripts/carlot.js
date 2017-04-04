@@ -8,7 +8,7 @@ var CarLot = (function () {
 			// Takes cars from JSON and creates array named inventory
 			inventory = JSON.parse(this.responseText).cars;
 			//Call to populate page after inventory array is created
-			populatePage(inventory);
+			callback(inventory);
 		});	
 		inventoryLoader.open("GET", "inventory.JSON");
 		inventoryLoader.send();
